@@ -53,12 +53,15 @@ header > p{
 nav{
     text-align: left;
     padding-top: 50px;
-    padding-bottom: 10px;
+    padding-bottom: 7px;
+    max-width: 840px;
+    min-width: 300px;
+    margin: auto;
 }
 
 nav > a{
     text-decoration: none;
-    padding: 2px 30px 2px 7px;
+    padding: 7px;
     color: rgba(255, 255, 255, 0.829);
 
     transition-property: background-color, border-radius;
@@ -88,6 +91,16 @@ main img{
 
 main a{
     background-color: #3DDC84;
+}
+
+#aprender-mais > div > ul{
+    list-style-position: inside;
+    list-style-type: '\2705\00A0\00A0';
+    columns: 2;
+    max-width: 800px;
+    min-width: 300px;
+    display: block;
+    margin: auto;
 }
 
 section{
@@ -201,6 +214,11 @@ main a{
 main a:hover {
     text-decoration: underline;
 }
+
+.links::after{
+    content: " \1F517";
+}
+
 
 footer{
     margin-top: 10px;
